@@ -1,6 +1,6 @@
-# PorpidPostproc using Indexed Reads
+# PORPIDpipeline using Indexed Reads
 
-This pipeline has been adapted from the PORPID-postproc repository (https://github.com/MurrellGroup/PORPIDpipeline/)
+This pipeline has been adapted from the PORPIDpipeline repository (https://github.com/MurrellGroup/PORPIDpipeline/)
 by Dylan Westfall to enable the pipeline to accept samples labeled with Index primers rather 
 than unique donor ID barcodes present in the cDNA primer. This primarily revolved around 
 replacing the demultiplexing code in demux_functions.jl with code which Alec Pankow had 

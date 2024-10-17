@@ -1,29 +1,10 @@
 # PorpidPostproc using Indexed Reads
 
-This repository is an upgrade of PORPID-postproc (branch h704, by Alec Pankow). 
-
-now upgraded to Julia version 1.7.1 by Hugh Murrell 
-
-## branch h705mod1 
-
-In this branch we attempt to implement some suggestions by Kenneth Polzin of MullinsLab:
-
-- fix the "too many open files error"
-- load raw-reads from a zipped `fastq.gz` file
-- tar and zip output folders
-- implement user selected `degap` flag for output sequences
-
-and some suggestions by David Matten of WilliamsonLab:
-
-- keep copies of discarded sequences and report all sequence counts
-
-## branch index
-
-This branch has been further adapted by Dylan Westfall to enable the pipeline to accept samples 
-labeled with Index primers rather than unique donor ID barcodes present in the cDNA primer. 
-This primarily revolved around replacing the demultiplexing code in demux_functions.jl with
-code which Alec had written previously for an older version of PORPID-postproc that could accept
-Indexed samples. 
+This pipeline has been adapted from the PORPID-postproc repository (https://github.com/MurrellGroup/PORPIDpipeline/)
+by Dylan Westfall to enable the pipeline to accept samples labeled with Index primers rather 
+than unique donor ID barcodes present in the cDNA primer. This primarily revolved around 
+replacing the demultiplexing code in demux_functions.jl with code which Alec Pankow had 
+written previously for an older version of PORPID-postproc that could accept Indexed samples. 
 
 The new code block does not report counts for reads that were rejected so the following lines
 are now not included in the {dataset}-count.html report. 
@@ -34,7 +15,7 @@ To avoid confusion the index rule, script index.jl, and report {dataset}-index.h
 h705mod1 branch were renamed to counts, counts.jl, and {dataset}-counts.html to avoid confusion
 now that the demultiplexing step uses Index primers.
 
-## Version 1.1 changes
+## Index Version 1.1 changes
 1) All csv reports (contam, demux, quality, etc) now include dataset name
 2) Added a directory in postproc **{dataset}_fasta**, which contains the final postproc sequence 
    set for each sample. If degap is TRUE then these files are degapped. The fasta file in 

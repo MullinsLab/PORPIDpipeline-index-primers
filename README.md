@@ -1,4 +1,4 @@
-# PorpidPostproc 
+# PorpidPostproc using Indexed Reads
 
 This repository is an upgrade of PORPID-postproc (branch h704, by Alec Pankow). 
 

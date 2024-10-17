@@ -1,0 +1,25 @@
+Dataset1:
+  Sample1:
+    cDNA_primer: CCGCTCCGTCCGACGACTCACTATAcactcaNNNNNNNNCAATCAKCACCTGCCATCTGTTTTCCAT
+    fwd_index: Index_F06
+    index_type: Index_primer
+    panel: panels/POL-FmodMozFl-INTR2_panel.fasta
+    rev_index: Index_R01
+    rev_primer: CCGCTCCGTCCGACGACTCACTATA
+    sec_str_primer: CTGTACCAGTAAAATTAAAGCCAGGAATGGATGG
+  Sample2:
+    cDNA_primer: CCGCTCCGTCCGACGACTCACTATAcactcaNNNNNNNNCAATCAKCACCTGCCATCTGTTTTCCAT
+    fwd_index: Index_F04
+    index_type: Index_primer
+    panel: panels/POL-FmodMozFl-INTR2_panel.fasta
+    rev_index: Index_R01
+    rev_primer: CCGCTCCGTCCGACGACTCACTATA
+    sec_str_primer: CTGTACCAGTAAAATTAAAGCCAGGAATGGATGG
+  Sample3:
+    cDNA_primer: CCGCTCCGTCCGACGACTCACTATAcactcaNNNNNNNNCAATCAKCACCTGCCATCTGTTTTCCAT
+    fwd_index: Index_F05
+    index_type: Index_primer
+    panel: panels/POL-FmodMozFl-INTR2_panel.fasta
+    rev_index: Index_R01
+    rev_primer: CCGCTCCGTCCGACGACTCACTATA
+    sec_str_primer: CTGTACCAGTAAAATTAAAGCCAGGAATGGATGG

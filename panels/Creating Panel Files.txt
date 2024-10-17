@@ -1,0 +1,29 @@
+9/15/21 DW
+updated 2/24/22 DW
+
+Download alignments from the LANL website to use as the panel files.
+https://www.hiv.lanl.gov/content/sequence/NEWALIGN/align.html
+
+Alignment type: Compendium
+Organism: HIV-1/SIVcpz
+Regions: User-defined range (see below)
+Subtype: All M Group (A-K + Recombinants)
+DNA/Protein: DNA
+Year: 2019
+Format:Fasta
+
+Set HXB2 coordinates to encompass your amplicon with a little extra on either side
+Examples:
+GP: 600-3600
+POL: 1600-5600
+REN: 5800-9200
+REN: 5000-9200
+
+Align your cDNA and 2nd rd fwd primers then trim alignment to remove the primer sequences.
+This leaves the alignment the exact size of your amplicon. 
+
+Strip all columns that have gaps in >90% of sequences. 
+In Geneious: Tools -> Mask Alignment -> "Save a copy with sites stripped", "Sites containing "Gaps (%)" 90%" -> OK
+
+Give stripped alignment new unique name (preferably listing 2nd rd Primers) and upload to the
+panel directory.
